@@ -30,6 +30,7 @@ load_dotenv(Path(__file__).resolve().parent / ".env")
 
 logging.basicConfig(format="%(asctime)s %(levelname)s %(name)s: %(message)s", level=logging.INFO)
 logging.getLogger("httpx").setLevel(logging.WARNING)  # évite de logger le token dans les URLs
+logging.getLogger("apscheduler").setLevel(logging.WARNING)  # pas de log à chaque heartbeat
 log = logging.getLogger("ingress-cp-bot")
 
 TZ = ZoneInfo(os.environ.get("BOT_TZ", "Europe/Paris"))
