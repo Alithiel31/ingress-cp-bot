@@ -1,0 +1,13 @@
+.env
+.git
+.github
+.venv
+__pycache__
+*.pyc
+data
+tests
+README.md
+README.fr.md
+LICENSE
+pyproject.toml
+PRIVACY.md
